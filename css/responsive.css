@@ -1,0 +1,250 @@
+/*		Default Layout: 960px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+*/
+#wrapper{
+	margin: 0px auto;
+	width: 960px;
+	border-left: 1px solid #6B710E;
+	border-right: 1px solid #6B710E;
+
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+#mainmanu{
+	display: block;
+
+}
+.selectnav{
+	display: none;
+}
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+ #wrapper{
+ 	width: 95%;
+ }
+#social_area{
+	display: none;
+}
+#single_article{
+	width: 90%;
+}
+.sidbar{
+	width: 90%;
+}
+#mainmanu{
+	display: none;
+}
+.selectnav{
+	display: block;
+	min-height: 100%;
+	min-width: 100%;
+	text-align: center;
+}
+.noborder{
+	border-top: none;
+}
+ 
+
+}
+
+
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+ #wrapper{
+ 	width: 98%;
+ }
+#social_area{
+	display: none;
+}
+#single_article{
+	width: 95%;
+}
+.sidbar{
+	width: 95%;
+}
+#mainmanu{
+	display: none;
+}
+.selectnav{
+	display: block;
+	min-height: 100%;
+	min-width: 100%;
+	text-align: center;
+}
+
+
+.full_width_slider{
+	display: none;
+}
+.header{
+	text-align: center
+}
+
+.imgp_wrapper img{
+	width: 91%;
+	height: auto;
+}
+
+.content h2{
+	font-size: 17px;
+}
+.content{
+	width: 98%;
+}
+.content figure {
+	width: 95%;
+	padding: 8px;
+}
+blockquote{
+	margin-left: 0;
+}
+.content img{
+	width: 100%;
+	height: auto;
+}
+.noborder{
+	border-top: none;
+}
+ 
+
+}
+
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+#wrapper{
+ 	width: 98%;
+ }
+#social_area{
+	display: none;
+}
+#single_article{
+	width: 95%;
+}
+.sidbar{
+	width: 95%;
+}
+#mainmanu{
+	display: none;
+}
+.selectnav{
+	display: block;
+	min-height: 100%;
+	min-width: 100%;
+	text-align: center;
+}
+
+
+.full_width_slider{
+	display: none;
+}
+.header{
+	text-align: center
+}
+
+.imgp_wrapper img{
+	width: 91%;
+	height: auto;
+}
+
+.content h2{
+	font-size: 17px;
+}
+.content{
+	width: 98%;
+}
+.noborder{
+	border-top: none;
+}
+ 
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	#wrapper{
+ 	width: 98%;
+ }
+#social_area{
+	display: none;
+}
+#single_article{
+	width: 95%;
+}
+.sidbar{
+	width: 95%;
+}
+#mainmanu{
+	display: none;
+}
+.selectnav{
+	display: block;
+	min-height: 100%;
+	min-width: 100%;
+	text-align: center;
+}
+
+
+.full_width_slider{
+	display: none;
+}
+.header{
+	text-align: center
+}
+
+.imgp_wrapper img{
+	width: 91%;
+	height: auto;
+}
+
+.content h2{
+	font-size: 17px;
+}
+.noborder{
+	border-top: none;
+}
+ 
+	
+	
+}
